@@ -1,0 +1,83 @@
+<html lang="pt-br">
+    <head>
+        <link rel="stylesheet" href="stilo.css">
+        <link rel="shortcut icon" href="imagens/Portfólio-Man.png" type="image/x-icon">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Portfólio, perfil completo do usuario">
+        <meta name="author" content="Clayton Santos">
+        <title>Currículo</title>
+    </head>
+    <main>
+        <body>
+            <!--TL2.1 Designer da barra horizontal superior-->
+            <header class="barra-horizontal-superior">
+                <!--TL2.1.1 Menu lateral e função de fechar-->
+                <aside id="menu-oculto" class="menu-lateral">
+                    <a href="javascript:void(0)" class="btn-fechar" onclick="fecharNav()">&times;</a>
+                    <a href="livros.html">Livros</a>
+                    <a href="programas.html">Programas</a>
+                    <a href="projetos.html">Projetos</a>
+                    <a href="testecomportacional.html">Teste Comportacional</a>
+                    <a href="manutencao.html">Manutenção</a>
+                    <a href="index.html" rel="prev">Capa</a>
+                </aside>
+                <!--TL2.1.1.1 Designe e abertura do menu lateral-->
+                <section>
+                    <span style="font-size: 30px;cursor: pointer" onclick="abrirNav()">&#9776;</span>
+                </section>
+                <!--TL2.1.1.2 Conexão com aquivo do javascript-->
+                <script type="text/javascript" src="javascript/scrip.js"></script>
+            </header>
+            <!--TL2 Tela principal-->
+            <div class="meio-central">
+                <div class="meio-esquerdo"></div>
+                <header class="meio-direito">
+                    <div class="txt-apresentacao">
+                        <p>Seja bem vindo ao Portfólio, onde tem toda informação necessária sobre projetos criados, programas usados e serviços prestados por Clayton Santos Macedo.</p>
+                    </div>
+                </header>
+            </div>
+            <!--TL2.2 Titulo da página-->
+            <div class="titulo"><h2>Informação</h2></div>
+            <!--TL2.3 Imagens no formado de circulo-->
+            <div class="margem-externa">
+                <div class="circulo">
+                    <img src="imagens/img-main/Aplicativos.jpeg" alt="Aplicativos" class="img-circulo">
+                    <p class="txt-infor">Alguns programas são utilizado para um determinado ocasião</p>
+                </div>
+                <div class="circulo">
+                    <img src="imagens/img-main/Gestao-Projetos.jpg" alt="Projetos" class="img-circulo">
+                    <p class="txt-infor">Projetos criados com informações fictícios, apenas para treinamento de boas práticas</p>    
+                </div>
+                <div class="circulo">
+                    <img src="imagens/img-main/Leitura.jpeg" alt="Livros" class="img-circulo">
+                    <p class="txt-infor">Descrições dos livros já lido ou em andamento</p>
+                </div>
+                <div class="circulo">
+                    <img src="imagens/img-main/manutenção-aparelhos.png" alt="Manutenção"  class="img-circulo">
+                    <p class="txt-infor">Apresentação por resumo, sobre dispositivos eletrônicos consertados</p>
+                </div>
+                <div class="circulo">
+                    <img src="imagens/img-main/Caracteristica.jpeg" alt="Teste Comportacional" class="img-circulo">
+                    <p class="txt-infor">Comportamento pessoal com pontos fracos e pontos fortes, e evolução</p>
+                </div>
+            </div>         
+            <!--TL2.4 Rodapé com informações de localização-->
+            <map class="rodape">
+                <!--<a href="https://www.google.com.br/maps/place/R.+Datileira+-+Jardim+Santa+Maria,+S%C3%A3o+Paulo+-+SP,+03576-180/@-23.5559351,-46.5086109,15z/data=!4m6!3m5!1s0x94ce675baaaaf4bd:0xda1e0f6d220f9e1f!8m2!3d-23.554778!4d-46.5092302!16s%2Fg%2F1ymt2npks" target="_blank" >
+                    <img src="imagens/img-main/local.PNG" alt="Mapa" class="mapa">
+                </a>-->
+                <img src="imagens/img-main/Cidade.png" alt="Mapa" class="mapa">
+                <div>
+                    <li>Moradia:</li>
+                    <li>Zona Leste</li>
+                    <li>Jadim Vale do Sol</li>
+                    <li>Proximo Av.Ragueb Chohfi</li>
+                    <li>Proximo a Cidade Tiradentes</li>
+                    <li>Proximo a Cidade São Mateus</li>
+                </div>
+            </map>
+        </body>
+    </main>
+</html>
