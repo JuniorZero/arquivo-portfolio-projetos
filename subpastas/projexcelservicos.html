@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <link rel="stylesheet" href="../stilo.css">
+        <link rel="shortcut icon" href="../imagens/Portfólio-Man.png" type="image/x-icon">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Projetos</title>
+    </head>
+    <body>
+        <!--TL14.1 Designer da barra horizontal superior-->
+        <header class="sub-barra-superior">
+            <ul class="lista-navegacao">
+                <li><a href="projexcelfinanças.html">Finanças</a></li>
+                <li><a href="@">Histórico Escolar</a></li>
+                <li><a href="projexcelgrafico.html">Gráficos</a></li>
+            </ul>
+        </header>
+        <!--TL14.3 Titulo da página-->
+        <h3>Gerenciamento de Serviços</h3>
+        <!--TL14 Tela principal-->
+        <div class="subprojeto-borda-servico">
+            <div class="">
+                <h3>Tabela demonstrativa dos serviços prestado por Clayton Santos</h3>
+            </div>
+            <img src="img.projexcelservicos/Gerenciamento.Serviços.PNG" alt="Tabela dos Serviços">
+        </div>
+        <div class="subprojeto-borda-inversa">
+            <img src="img.projexcelservicos/Seleção.Tarefa.PNG" alt="Seleção do Serviço">
+            <div class="subprojeto-txt-servico">
+                <p>Tabela auxiliar, onde seleciona o serviço com o valor. Foi utilizado a fórmula CORRESP(P5;C4:N4;0), na coluna posição,  a fórmula corresp irá percorrer a primeira coluna dos serviços, entre C4 até N4, procurando a palavra correspondente a palavra digitada na célula P5, nome da máquina, e o zero, é indicando que a procura tem que ser exata.<br> E na outra coluna, Valor, é encontrado a fórmula: SES(Q5=1;ÍNDICE(D5:D41;CORRESP(R5;C5:C41;0));Q5=3;ÍNDICE(F5:F41;CORRESP(R5;E5:E41;0));Q5=5;ÍNDICE(H5:H41;CORRESP(R5;G5:G41;0));Q5=9;ÍNDICE(L5:L41;CORRESP(R5;K5:K41;0));Q5=11;ÍNDICE(N5:N41;CORRESP(R5;M5:M41;0))).<br> A fórmula se inicia usando SES, função de comparação dos valores verdadeiros ou falso, assim utiliza primeiro a coluna Q5, Posição, para saber o que procurar na tabela dos serviços, por exemplo a posição 5 que indica computador,Q5=5. Em seguida a função ÍNDICE, vai buscar os preços dos serviços da coluna Preços. E por último a função CORRESP irá procurar a palavra digitada na coluna Descrição, R5, nas colunas que estão escritos os serviços de cada aparelho.</p>
+            </div>
+        </div>
+        <div class="subprojeto-borda1">
+            <img src="img.projexcelservicos/Tabela-Horas.PNG" alt="">
+            <div class="subprojeto-txt-servico">
+                <p>Tabela Banco de horas,tem colunas, Horas Trabalhadas, Horas Extra e Horas Devedoras, composta por fórmulas. A coluna Horas Trabalhadas, é feito um cálculo entre a entrada menos a entrada do almoço e a saída do almoço menos a saída, (C5-B5)+(E5-D5), o resultado de ambos, será somado e mostrando as horas trabalhadas no dia.<br> Na coluna seguinte, Horas extra, usa a Função SE, função de comparação se o valor é verdadeiro ou falso, SE((F5-$J$3)>$K$3;F5-$J$3;0), pegando o valor da coluna Horas Trabalhadas subtraindo com a coluna Padrão da tabela seguinte,  se o resultado for maior que a coluna tolerância, da tabela seguinte,  então será calculado as Horas Trabalhadas menos a coluna padrão. Mostrando assim quantas horas há mais foi trabalhado naquele dia, e por último, o zero, se as horas trabalhadas forem menores que a tolerância, nenhum valor, positivo ou negativo,deve ser acrescentado. Por fim as Horas Devedoras, usa a Função SE, função de comparação se o valor é verdadeiro ou falso, SE(($J$3-F5)>$K$3;$J$3-F5;0), pegando o valor da coluna Horas Trabalhadas subtraindo com a coluna Padrão da tabela seguinte,  se o resultado for maior que a coluna tolerância, da tabela seguinte,  então será calculado as Horas Trabalhadas menos a coluna padrão. Mostrando assim quantas horas há mais foi trabalhado naquele dia, e por último, o zero, se as horas trabalhadas forem menores que a tolerância, nenhum valor, positivo ou negativo,deve ser acrescentado. A única diferença e muito importante, entre as fórmulas das colunas Horas Extra e Horas Devedoras são os posicionamentos dos valores das células, Observação: Nas Horas Extra tem F5-$J$3 e nas Horas Devedoras é oposto, $J$3-F5.
+                </p>
+            </div>
+        </div>
+        <div class="subprojeto-borda-inversa">
+            <img src="img.projexcelservicos/Contrato-Mensal.PNG" alt="">
+            <div class="subprojeto-txt-servico">
+                <p>Na última tabela, é uma tabela com informações adicionais que contém duas colunas, Padrão e Tolerância  que auxilia a Tabela de Horas a obter os resultados das colunas Horas Extra e Horas Devedoras. A Coluna Padrão contém o total de horas permitido pela lei Brasileira, 8 horas trabalhados por dia e a coluna Tolerância, são minutos que muitas empresas permitem o atraso dos funcionários.<br> As colunas Feriados e Contrato, são informações relacionado ao calendário e a última coluna Dias Trabalhados, é composto pela fórmula DIATRABALHOTOTAL(M3;M4;L3:L12), que seleciona a célula M3, sendo o início do trabalho e M4 sendo o fim do Trabalho, da coluna anterior, Contrato e selecionando L3 até L12 da coluna Feriados, para calcular a quantidade de dias que vai ser trabalhando em um determinado período. Essa função DIATRABALHOTOTAL, não calcula os feriados, ele seleciona essas datas para retirar do cálculo.</p>
+            </div>
+        </div>
+        <!-- (Para colocar mais conteúdo)
+        <div class="">
+            <img src="" alt="">
+            <div class="">
+                <p></p>
+            </div>
+        </div>
+        -->
+    </body>
+</html>

@@ -1,28 +1,32 @@
 @charset "UTF-8";
 /*D8 Toda as Paginas*/
 body{
-    margin: 0 auto;
+    margin: 0;
 }
 /*D8.1 Estrutura e design da barra horizontal superior de todas as paginas*/
 .barra-horizontal-superior{
+    position:static;
     display: flex;
     background-image: linear-gradient(rgba(197, 197, 197, 0.828)80%,rgb(19, 19, 255));
-    height: 55px;
-    padding: 2px;
+    height: 10.3%;
+    width: 100%;
+    margin-top: 0%;
 }
 /*> D8.2Posicionamento da lista */
 li{
     list-style: none;
-    margin-top: 10px;
+    margin-top: 1em;
     font-size:larger;
     font-family:'Times New Roman', Times, serif;
 }
 /*D8.3Estrutura do titulo*/
 .titulo{
+    position: static;
     display: flex;
     justify-content: center;
     background-image: linear-gradient(rgba(197, 197, 197, 0.828) 80%,rgb(19, 19, 255));
-    height: 15%;
+    height:5em;
+    width: 100%;
 }
 h2{
     font-size:xx-large;
@@ -41,7 +45,7 @@ h2{
     background-color: rgb(163, 163, 163);
     overflow-x: hidden;
     transition: 0.35s;
-    padding-top: 50px;
+    padding-top: 10%;
 }
 /*Parte conteúdo*/
 .menu-lateral a{
@@ -80,58 +84,58 @@ a {
     padding-bottom: 17%;
 }
 .autor{
-    margin-left: 50px;
-    margin-top:100px;
+    margin-left: 5%;
+    margin-top:10%;
 }
 .botao{
     background-color: #a91eee; /* Green */
     border: 3px solid #000000;
     transition-duration: 0.5s;
     color: #ffffff;
-    padding: 55px 42px;
+    padding: 5% 4%;
     text-decoration: none;
     text-align: center;
-    font-size: 22px;
+    font-size: 1.5em;
     font-family:'Times New Roman', Times, serif;
-    border-radius: 20px;
-    margin-right: 50px;
-    margin-top: 200px;
-    height: 20px;   
+    border-radius: 20%;
+    margin-right: 11%;
+    margin-top: 17%;
+    height: 20%;   
 }
 .botao:hover{
     background-color: #b74eeb; /* Green */
     color: rgb(255, 255, 255);
 }
-/*D10 Página inicio*/
+/*D10 Página main*/
 /*D10.1 Posicionamento e Design*/
 .meio-central{
+    position:static;
     display: flex;
-    height: 406.2px;
+    height: 75%;
     justify-content: space-between;
-    
+    margin-top: 0%;
 }
 .meio-esquerdo{
+    position:static;
     background-image: url(videos/tech-eye.gif);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    width: 500px;
+    width: 50%;
     float: left;
     display: inline;
 }
 .meio-direito{
-    margin-top: 45px;
-    margin-right: 100px;
-    width: 500px;
+    position:static;
+    margin-top: 4%;
+    margin-right: 5%;
+    width: 43%;
 }
 /*D10.1.1 Posição da Informação*/
 .txt-apresentacao{
     text-align: center;
-    height: 300px;
-    margin-top: -30px;
-    margin-left: 20px;
     text-transform: uppercase;
-    line-height: 1.8;
+    line-height: 1.6;
 }
 /*D10.2 Posição e Estrutura das imagens*/
 .margem-externa{
@@ -139,22 +143,22 @@ a {
     justify-items:flex-end ;
     flex-wrap: wrap;
     justify-content:center;
-    margin-top: 15px;
+    margin-top: 5%;
 }
-.circulo{
-    width: 355px;
+.circulo{ /*mudar nome para caixa e posivel usar para todas as paginas*/
+    width: 350px;
     height: 300px;  
+
 }
 .img-circulo{
     height: 170px;   
     border-radius: 150%;
-    margin-left: 100px;
+    margin-left: 25%;
 }
 /*D10.2.1 Design da frase*/
-.txt-infor{
+.txt-infor{/*posivel usar para todas as paginas*/
     text-align: center;
-    height: 300px;
-    margin-left: 20px;
+    margin-left: 1em;
     text-align: center;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -164,181 +168,211 @@ a {
     justify-content: space-around;
     flex-wrap: wrap;  
     background-image: linear-gradient(rgba(197, 197, 197, 0.828) 80%,rgb(19, 19, 255));
-    /*height: 400px;*/
-    padding: 50px;
+    padding: 5%;
 }
 .mapa{
-    margin-top: 1px;
+    margin-top: -1%;
 }
 /*D11 Páginas do menu*/
 /*D11.1Posicionamento*/
 .img-capa{
+    position: static;
     display:flex;
     justify-content: space-around;
     background-size: cover;
     flex-direction: column;
+    margin-top: 0%;
 }
 /*D11.2 Posicionamento do conteúdo*/
 .borda-externa{
     display: flex;
     justify-items: flex-end;
-    margin-top: 10px;
+    margin-top: 5%;
     flex-wrap: wrap;
     justify-content:space-between;
 }
 .borda{
     width: 355px;
-    height: 400px;   
+    height: 400px;
 }
 /*D11.2.1 Posição da informação*/
 .txt-descricao{
     text-align: justify;
-    text-indent: 20px;
-    margin-top: -35%;
-    margin-left: 28%;
+    text-indent: 1em;
+    margin-top: -9em;
+    margin-left: 6em;
     font-family:'Times New Roman', Times, serif;
 }
 .txt-livro{
     text-align: justify;
-    text-indent: 20px;
-    margin-left: 45%;
-    margin-top: -56%;
+    text-indent: 1em;
+    margin-left: 10em;
+    margin-top: -13.5em;
     font-family:'Times New Roman', Times, serif;
 }
-/*D13 Paginas Sub Projeto*/
+/*D13 Paginas Sub Projeto finanças*/ /*verificar o documento*/
 /*D13.1 Barra de Navegação*/
 .sub-barra-superior{
+    position:static;
     display: flex;
-    background-image: linear-gradient(rgba(197, 197, 197, 0.828)80%,rgb(19, 19, 255));
-    height: 55px;
-    padding: 2px;
     justify-content:space-around;
+    background-image: linear-gradient(rgba(197, 197, 197, 0.828)80%,rgb(19, 19, 255));
+    height: 10.3%;
+    width: 100%;
+    margin-top: 0%;
 }
-.lisa-navegacao{
+.lista-navegacao{
     display:flex;
     word-spacing: 5px;
     align-items: center;
 }
-.lisa-navegacao li{
+.lista-navegacao li{
     display: flex;
-    padding: 20px;
+    padding: 2vh;
 }
-.lisa-navegacao a:hover{
+.lista-navegacao a:hover{
     color:rgb(0, 0, 0);
 }
 /*D13.2 Bordas e Posicionamento*/
-.subprojeto-borda1{
+.borda-externa-excel{
     display: flex;
     justify-items: flex-end;
-    margin-top: 10px;
-    margin-left: 3%;
-    margin-right: 3%;
+    margin-top: 5%;
     flex-wrap: wrap;
-    justify-content:space-between;
+    justify-content:space-evenly;
 }
-.subprojeto-borda2{
-    display: flex;
-    justify-items: flex-end;
-    margin-top: 10px;
-    margin-left: 3%;
-    margin-right: 3%;
-    flex-wrap: wrap;
-    justify-content:space-between;
+
+h3{
+    margin-top: 5%;
+    font-size:xx-large;
+    font-family: Times New Roman, serif;
+    font-style: oblique;
 }
-.subprojeto-borda-inversa{
-    display: flex;
-    justify-items: flex-end;
-    margin-top: 10px;
-    margin-right: 4%;
-    margin-left: 3%;
-    flex-wrap: wrap;
-    justify-content:space-between;
-    flex-direction: row-reverse;
+.borda-tabela-financas-mensais{
+    position: static;
+    width: 43vh;
+    height: 54vh;
+}
+.borda-resultado-financas-mensais{
+    position: static;
+    width: 55vh;
+    height: 13vh;
+    margin-top: 2%;
+}
+.borda-detalhe-financas-mensais{
+    position: static;
+    width: 43vh;
+    height: 13vh;
+    margin-top: 2%;
+}
+.borda-tabela-financas-viagem{
+    position: static;
+    width: 81vh;
+    height: 18vh;
+    margin-top: 2%;
+}
+.borda-resultado-financas-viagem{
+    position: static;
+    width: 34vh;
+    height: 13vh;
+    margin-top: 2%;
+}
+.borda-detalhe-financas-viagem{
+    position: static;
+    width: 45vh;
+    height: 12vh;
+    margin-top: 2%;
+}
+.borda-tabela-financas-futuro{
+    position: static;
+    width: 45vh;
+    height: 13vh;
+    margin-top: 2%;
+}
+.borda-resultado-financas-futuro{
+    position: static;
+    width: 29vh;
+    height: 10vh;
+    margin-top: 2%;
 }
 /*D13.3 Texto e Posicionamento do texto*/
-.subprojeto-txt1{
-    text-align:justify;
-    text-indent: 20px;
-    line-height: 1.2;
-    margin-left: 22.3%;
-    margin-top: -28%;
-    margin-right: 1%;
+.borda-tabela-financas-mensais-txt{
+    position: static;
+    width: 150vh;
+    height: 55vh;
+    text-indent: 1em;
+    text-align: justify;
     font-family:'Times New Roman', Times, serif;
 }
-.subprojeto-txt2{
-    text-align:justify;
-    text-indent: 20px;
-    line-height: 1.2;
-    margin-left: 42%;
-    margin-top: -10%;
-    margin-right: 1%;
+.borda-resultado-financas-mensais-txt{
+    position: static;
+    width: 120vh;
+    height: 36vh;
+    text-indent: 1em;
+    text-align: justify;
     font-family:'Times New Roman', Times, serif;
 }
-.subprojeto-txt3{
-    text-align:justify;
-    text-indent: 20px;
-    line-height: 1.2;
-    margin-left: 33%;
-    margin-top: -10%;
-    margin-right: 1%;
+.borda-detalhe-financas-mensais-txt{
+    position: static;
+    width: 130vh;
+    height: 28vh;
+    text-indent: 1em;
+    text-align: justify;
     font-family:'Times New Roman', Times, serif;
 }
-.subprojeto-txt-inversa1{
-    text-align:justify;
-    text-indent: 20px;
+.borda-tabela-financas-viagem-txt{
+    position: static;
+    width: 100vh;
+    height: 33vh;
+    text-indent: 1em;
+    text-align: justify;
+    font-family:'Times New Roman', Times, serif;
+}
+.borda-resultado-financas-viagem-txt{
+    position: static;
+    width: 140vh;
+    height: 20vh;
+    text-indent: 1em;
+    text-align: justify;
+    font-family:'Times New Roman', Times, serif;
+}
+.borda-retalhe-financas-viagem-txt{
+    position: static;
+    width: 140vh;
+    height: 18vh;
+    text-indent: 1em;
+    text-align: justify;
+    font-family:'Times New Roman', Times, serif;
+}
+.borda-tabela-financas-futuro-txt{
+    position: static;
+    width: 120vh;
+    height: 23vh;
+    text-indent: 1em;
+    text-align: justify;
+    font-family:'Times New Roman', Times, serif;
+}
+.borda-resultado-financas-futuro-txt{
+    position: static;
+    width: 130vh;
+    height: 15vh;
+    text-indent: 1em;
+    text-align: justify;
+    font-family:'Times New Roman', Times, serif;
+}
+/*Pagina Sub Grafico*//*documentar*/
+.subprojeto-txt-grafico{
+    text-align: justify;
+    text-indent: 1em;
     line-height: 1.2;
+    font-family: 'Times New Roman', Times, serif;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: -23%;
+    height: 18%;
+}
+/*Pagina Sub Serviços*//*documentar*/
+.subprojeto-borda-servico{
     margin-left: 3%;
-    margin-top: -8%;
-    margin-right: 29%;
-    font-family:'Times New Roman', Times, serif;
+    margin-right: 3%;
 }
-.subprojeto-txt-inversa2{
-    text-align:justify;
-    text-indent: 20px;
-    line-height: 1.2;
-    margin-left: 3%;
-    margin-top: -7%;
-    margin-right: 35%;
-    font-family:'Times New Roman', Times, serif;
-}
-.subprojeto-txt-inversa3{
-    text-align:justify;
-    text-indent: 20px;
-    line-height: 1.2;
-    margin-left: 3%;
-    margin-top: -7%;
-    margin-right: 23%;
-    font-family:'Times New Roman', Times, serif;
-}
-.subprojeto-txt-inversa4{
-    text-align:justify;
-    text-indent: 20px;
-    line-height: 1.2;
-    margin-left: 3%;
-    margin-top: -7%;
-    margin-right: 19%;
-    font-family:'Times New Roman', Times, serif;
-}
-.subprojeto-txt-inversa5{
-    text-align:justify;
-    text-indent: 20px;
-    line-height: 1.2;
-    margin-left: 3%;
-    margin-top: -7%;
-    margin-right: 24%;
-    font-family:'Times New Roman', Times, serif;
-}
-.subprojeto-txt-inversa6{
-    text-align:justify;
-    text-indent: 20px;
-    line-height: 1.2;
-    margin-left: 3%;
-    margin-top: -6%;
-    margin-right: 16%;
-    font-family:'Times New Roman', Times, serif;
-}
-/*Visualizar melhor as margens
-    overflow: hidden;
-    box-shadow: 5px 0px 50px #000000;
-*/
-/*vh -> propoção da largua de cada dispositivo (responsivo)*/
