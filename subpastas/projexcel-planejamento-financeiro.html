@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <link rel="stylesheet" href="../stilo.css">
+            <link rel="shortcut icon" href="../imagens/Portfólio-Man.png" type="image/x-icon">
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>
+                Projetos
+            </title>
+    </head>
+    <body>
+        <!--Barra horizontal-->
+        <header class="barra-horizontal"></header>
+        <!--Tela principal--> 
+        <div class="container-global">
+            <header class="header">
+            <h1>
+                Tabela de Financias
+            </h1>
+            </header>
+            <div class="content">
+                <div class="content-conteudo">
+                    <article class="hero">
+                        <img src="img.projexcel/tab-finanças-mensais.PNG" alt="Tabela Finanças Mensais">
+                        <p class="brief">
+                            O projeto sobre organização financeira, tem como demostração a utiliação do Excel e o uso de algumas formulas e função. Coluna Status, não será necessário modificação do usuário, pois essa coluna está vinculado a coluna limite pela função SE,por exemplo: =SE(B9>=F9;"Barato";"Caro")
+                        </p>
+                    </article>
+                    <div class="last-contents">
+                        <article class="last-contents-call">
+                            <h2 class="secondary-title">
+                                Resultados do Tratamento de Dados
+                            </h2>
+                            <div class="last-contents-bloco">
+                                <img src="img.projexcel/resul-finanças-mensais.PNG" alt="Resultado Finanças Mensais">
+                                <p class="brief">
+                                    Os resultados finais da primeira tabela, calculando o total das despesas do usuário com o salário recebido pelo usuário. função =SOMA(Tabelas!F9:F35)
+                                </p>
+                            </div>
+                            <div class="last-contents-bloco">
+                                <img src="img.projexcel/detalhe-finanças-mensais.PNG" alt="Detalhes Finanças Mensais">
+                                <p class="brief">
+                                    Tem como objetivo mostrar detalhes que podem ou não agregar valor para o usuário. função =MAIOR(Tabelas!F9:F35;1), =MÍNIMO(Tabelas!E9:F35), =CONT.VALORES(Tabelas!E9:E35)
+                                </p>
+                            </div>
+                            <div class="last-contents-bloco">
+                                <img src="img.projexcel/tab-finanças-viagem.PNG" alt="Tabela Finanças Viagem" >
+                                <p class="brief">
+                                    Aqui a tambêm uma tabela que pode ser usado por um casal ou uma pessoa solteira.
+                                </p>
+                            </div>
+                            <div class="last-contents-bloco">
+                                <img src="img.projexcel/resul-finanças-viagem.PNG" alt="Resultado Finanças Viagem">
+                                <p class="brief">
+                                    Foco a preparação e controle financeiro, antes de uma viagem. formula =G7-G8
+                                </p>
+                            </div>
+                            <div class="last-contents-bloco">
+                                <img src="img.projexcel/detalhes-finanças-viagem.PNG" alt="Detalhes Finanças Viagem">
+                                <p class="brief">
+                                    Também contém uma tabela de detalhes, com informações adicionais para um melhor entendimento.
+                                </p>
+                            </div>
+                            <div class="last-contents-bloco">
+                                <img src="img.projexcel/tab-finanças-futuro.PNG" alt="Tabela Finanças Futuro">
+                                <p class="brief">
+                                    Pode ser visto informações sobre o histórico de dinheiro economizado e as metas para ser serem atingidos. função =SE(O9>=P9)
+                                </p>
+                            </div>
+                            <div class="last-contents-bloco">
+                                <img src="img.projexcel/resul-finanças-futuro.PNG" alt="Resultado Finanças Futuro">
+                                <p class="brief">
+                                    está conectado a tabela Finanças Futuro para mostrar a quantidade de dinheiro economizado, =SOMA(Tabelas!P9:P12), e em quanto tempo, =CONT.NÚM(Tabelas!N9:N12).
+                                </p>
+                            </div>
+                        </article>
+                    </div>
+                    <!--Menu-->
+                    <aside class="content-sidebar">
+                        <nav class="content-nav">
+                            <h3>
+                                MENU
+                            </h3>
+                            <ul>
+                                <li>
+                                    <a href="projexcel-grafico-vendas.html">
+                                        Gráficos
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="projexcel-horas-trabalhadas.html">
+                                        Banco de Horas
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Histórico Escolar
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </aside>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

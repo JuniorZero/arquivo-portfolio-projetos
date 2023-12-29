@@ -1,0 +1,10 @@
+.footer-unico{/*rodapé*/
+    background-color:  #a9a5a5;
+    clear: both;
+    float: left;
+    font-size:  .75em; /* 12 / 16 */
+    margin:  1.5625% 0; /* 15 / 960 */
+    padding: 1.5625%; /* 15 / 960 */
+    text-align: center;
+    width: 100%;
+}

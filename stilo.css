@@ -1,40 +1,64 @@
 @charset "UTF-8";
-/*D8 Toda as Paginas*/
-body{
+/*Altera atributos Toda as Paginas*/
+*{
     margin: 0;
+    padding: 0;
 }
-/*D8.1 Estrutura e design da barra horizontal superior de todas as paginas*/
-.barra-horizontal-superior{
-    position:static;
+html{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+/*Estrutura e design da barra horizontal superior de todas as paginas*/
+.barra-horizontal{
     display: flex;
-    background-image: linear-gradient(rgba(197, 197, 197, 0.828)80%,rgb(19, 19, 255));
-    height: 10.3%;
+    justify-content: center;
+    background-image: linear-gradient(rgba(71, 71, 71, 0.828)70%,rgb(255, 255, 255));
+    height: 4em;
     width: 100%;
-    margin-top: 0%;
 }
-/*> D8.2Posicionamento da lista */
+.barra-horizontal h2{
+    font-size:calc(1.2em + 1.2vw);
+    
+}
+a{
+    text-decoration: none;
+}
+/*Posicionamento da lista*/
 li{
     list-style: none;
     margin-top: 1em;
     font-size:larger;
-    font-family:'Times New Roman', Times, serif;
 }
-/*D8.3Estrutura do titulo*/
-.titulo{
-    position: static;
-    display: flex;
-    justify-content: center;
-    background-image: linear-gradient(rgba(197, 197, 197, 0.828) 80%,rgb(19, 19, 255));
-    height:5em;
-    width: 100%;
-}
-h2{
-    font-size:xx-large;
-    font-family: Times New Roman, serif;
-    font-style: oblique;
-}
-/*D8.4 Design do menu*/
+/*Design do menu*/
 /*Parte Externa*/
+.content-sidebar{/*Estrutura externa do Menu*/
+    display: flex;
+    float: right;
+    background-image: linear-gradient(rgba(71, 71, 71, 0.828)80%,rgb(255, 255, 255));
+    padding: 2%;
+    margin-top: 2%; 
+    width: 20%;
+    margin-right: 4%;
+}
+.content-nav ul{/*Menu*/
+    list-style-type: none;
+}
+.content-nav li{/*Formato dos botoes do Menu*/
+    background-color: rgb(255, 255, 255);
+    float: left;
+    margin: 6px;
+    outline: 2px solid #060606;
+    font-size:0.8dvi;
+    width: 80%;
+    text-align: center;
+    margin-left: 10%;
+}
+.content-nav a{ /*botao menu*/
+    display: block;
+    padding:  15%;
+    text-decoration: none;
+    
+    /*background-color: #ff01d0;*/
+}
 .menu-lateral{
     height: 100%;
     width: 0;
@@ -42,12 +66,15 @@ h2{
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: rgb(163, 163, 163);
+    background-color: rgba(251, 248, 248, 0.828);
     overflow-x: hidden;
     transition: 0.35s;
     padding-top: 10%;
 }
-/*Parte conteúdo*/
+.content-nav h3{
+    text-align: center;
+}
+/*Conteúdo do menu*/
 .menu-lateral a{
     padding: 10px 10px 10px 30px;
     text-decoration: none;
@@ -56,15 +83,15 @@ h2{
     transition: 0.3s;
 }
 .menu-lateral a:hover{
-    box-shadow: 6px 6px 15px rgb(19, 19, 225);
-    color:rgb(19, 19, 255);
+    box-shadow: 6px 6px 15px rgb(246, 108, 108);
+    color:rgb(246, 108, 108);
 }
-/*D8.4.1  abertura do menu lateral*/
+/*Largura da abertura do menu lateral*/
 @media screen and(max-height: 450px){
     .menu-lateral{padding-top: 15px;}
     .menu-lateral a{font-size: 18px;}
 }
-/*D8.4.2 Botão fechar*/
+/*Botão fechar do menu*/
 .btn-fechar{
     position: absolute;
     top: 10px;
@@ -72,51 +99,49 @@ h2{
     margin-left: 50px;
     width: 30px;
 }
-a {
-    text-decoration: none;
-}
-/*D9 Página index*/
+/*Página index*/
+/*Estrutura externa, altera o posicionamento*/
 .fundo{
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    background-image: linear-gradient(-45deg,rgba(197, 197, 197, 0.828)15%,#747CC7,rgb(0, 0, 255));
-    padding-bottom: 17%;
+    background-image: linear-gradient(-45deg,rgb(253, 253, 253)40%,rgb(246, 108, 108));
+    padding-bottom: 12.2%;
+    font-size: 1em;
 }
 .autor{
-    margin-left: 5%;
-    margin-top:10%;
+    margin-left: 4%;
+    margin-top:7%;
 }
+/*Botão entrar*/
 .botao{
-    background-color: #a91eee; /* Green */
+    background-color: rgb(165, 163, 165); /* Green */
     border: 3px solid #000000;
     transition-duration: 0.5s;
-    color: #ffffff;
-    padding: 5% 4%;
+    color: #000000;
+    padding: 2% 5%;
     text-decoration: none;
     text-align: center;
     font-size: 1.5em;
-    font-family:'Times New Roman', Times, serif;
     border-radius: 20%;
     margin-right: 11%;
-    margin-top: 17%;
+    margin-top: 28%;
     height: 20%;   
 }
+/*Efeito de deixar o botão mais claro ao passar o mouse*/
 .botao:hover{
-    background-color: #b74eeb; /* Green */
+    background-color: #bababb; /* Green */
     color: rgb(255, 255, 255);
 }
-/*D10 Página main*/
-/*D10.1 Posicionamento e Design*/
+/*Página main*/
+/*Posicionamento*/
 .meio-central{
-    position:static;
     display: flex;
     height: 75%;
     justify-content: space-between;
-    margin-top: 0%;
 }
+/*Posicionamento e dimensão do gif e mensagem*/
 .meio-esquerdo{
-    position:static;
     background-image: url(videos/tech-eye.gif);
     background-repeat: no-repeat;
     background-size: cover;
@@ -126,76 +151,85 @@ a {
     display: inline;
 }
 .meio-direito{
-    position:static;
     margin-top: 4%;
     margin-right: 5%;
     width: 43%;
+    font-size: 1em;
 }
-/*D10.1.1 Posição da Informação*/
+/*Posição da Informação sobre o menu*/
 .txt-apresentacao{
     text-align: center;
     text-transform: uppercase;
     line-height: 1.6;
 }
-/*D10.2 Posição e Estrutura das imagens*/
+/*Posição e Estrutura das imagens em circulos*/
 .margem-externa{
     display: flex;
     justify-items:flex-end ;
     flex-wrap: wrap;
     justify-content:center;
-    margin-top: 5%;
+    margin-top: 3%;
 }
-.circulo{ /*mudar nome para caixa e posivel usar para todas as paginas*/
+.circulo{
     width: 350px;
-    height: 300px;  
-
+    height: 60%;
+    
 }
 .img-circulo{
     height: 170px;   
     border-radius: 150%;
     margin-left: 25%;
 }
-/*D10.2.1 Design da frase*/
+/*Design das frases dos circulos*/
 .txt-infor{/*posivel usar para todas as paginas*/
     text-align: center;
-    margin-left: 1em;
-    text-align: center;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-left: 1.1em;
+    font-size: 1.1em;
 }
-/*D10.3 Rodapé*/
+/*Rodapé*/
 .rodape{
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;  
-    background-image: linear-gradient(rgba(197, 197, 197, 0.828) 80%,rgb(19, 19, 255));
-    padding: 5%;
+    background-image: linear-gradient(rgba(71, 71, 71, 0.828)90%,rgb(255, 255, 255));
+    margin-top: 3%;
+    padding: 3%;
+    
+}
+.rodape li{
+    margin-top: 3%;
+    font-size: 1.1em;
 }
 .mapa{
-    margin-top: -1%;
+    width: 75%;
+    height: 100%;
 }
-/*D11 Páginas do menu*/
-/*D11.1Posicionamento*/
+/*Páginas do menu*/
+/*Posicionamento da imagem*/
 .img-capa{
-    position: static;
     display:flex;
     justify-content: space-around;
     background-size: cover;
     flex-direction: column;
-    margin-top: 0%;
 }
-/*D11.2 Posicionamento do conteúdo*/
-.borda-externa{
+/*Posicionamento da informação*/
+.contanier{
     display: flex;
     justify-items: flex-end;
     margin-top: 5%;
     flex-wrap: wrap;
     justify-content:space-between;
+    width: 67.5%; /*67.5%*/
+    margin-left: 2%;
 }
+/*Posição da interno*/
 .borda{
-    width: 355px;
-    height: 400px;
+    /*margin-right: 19%;*/
+    width: 350px;
+    height: 395px;
+    
 }
-/*D11.2.1 Posição da informação*/
+/*Posição da informação*/
 .txt-descricao{
     text-align: justify;
     text-indent: 1em;
@@ -210,169 +244,52 @@ a {
     margin-top: -13.5em;
     font-family:'Times New Roman', Times, serif;
 }
-/*D13 Paginas Sub Projeto finanças*/ /*verificar o documento*/
-/*D13.1 Barra de Navegação*/
-.sub-barra-superior{
-    position:static;
-    display: flex;
-    justify-content:space-around;
-    background-image: linear-gradient(rgba(197, 197, 197, 0.828)80%,rgb(19, 19, 255));
-    height: 10.3%;
-    width: 100%;
-    margin-top: 0%;
-}
-.lista-navegacao{
-    display:flex;
-    word-spacing: 5px;
-    align-items: center;
-}
-.lista-navegacao li{
-    display: flex;
-    padding: 2vh;
-}
-.lista-navegacao a:hover{
-    color:rgb(0, 0, 0);
-}
-/*D13.2 Bordas e Posicionamento*/
-.borda-externa-excel{
-    display: flex;
-    justify-items: flex-end;
-    margin-top: 5%;
-    flex-wrap: wrap;
-    justify-content:space-evenly;
-}
 
-h3{
-    margin-top: 5%;
-    font-size:xx-large;
-    font-family: Times New Roman, serif;
-    font-style: oblique;
+/*Paginas Sub Projeto finanças*/
+h1{
+    font-size: 2em; /* 32 / 16 */
 }
-.borda-tabela-financas-mensais{
-    position: static;
-    width: 43vh;
-    height: 54vh;
+.last-contents-call img{
+    max-width: 100%;
+    float: inline-start;
+    width: 300px;
 }
-.borda-resultado-financas-mensais{
-    position: static;
-    width: 55vh;
-    height: 13vh;
-    margin-top: 2%;
+.container-global{/*estrutura externa*/
+    margin: 0 auto;
+    width: 67.5%; /* +/- 960 */
 }
-.borda-detalhe-financas-mensais{
-    position: static;
-    width: 43vh;
-    height: 13vh;
-    margin-top: 2%;
+.content{/*tamanho estrutura*/
+    margin: 1.5625% 0; /* 15 / 960 */
 }
-.borda-tabela-financas-viagem{
-    position: static;
-    width: 81vh;
-    height: 18vh;
-    margin-top: 2%;
+.brief{ /*largura entre titulo e frase*/
+    margin: 5px 0;
 }
-.borda-resultado-financas-viagem{
-    position: static;
-    width: 34vh;
-    height: 13vh;
-    margin-top: 2%;
+.content-conteudo{
+    float: left;
+    width: 1% 0%; /* 5 / 593 */
+    /* = 0.8431%, que, opcionalmente, pode ser arredondado para 1% */
 }
-.borda-detalhe-financas-viagem{
-    position: static;
-    width: 45vh;
-    height: 12vh;
-    margin-top: 2%;
+.hero{ /*largura entre as frases*/
+    display: flex;
+    margin: 20px 0;
 }
-.borda-tabela-financas-futuro{
-    position: static;
-    width: 45vh;
-    height: 13vh;
-    margin-top: 2%;
+.last-contents-bloco{ /*largura entre as frases e imagens*/
+    margin: 13% 3% 2%;
 }
-.borda-resultado-financas-futuro{
-    position: static;
-    width: 29vh;
-    height: 10vh;
-    margin-top: 2%;
+.last-contents{ /*tamanho da ultima frase*/
+    font-size: .75em;
 }
-/*D13.3 Texto e Posicionamento do texto*/
-.borda-tabela-financas-mensais-txt{
-    position: static;
-    width: 150vh;
-    height: 55vh;
-    text-indent: 1em;
-    text-align: justify;
-    font-family:'Times New Roman', Times, serif;
+.last-contents-call{ /*espaço entre frases e menu*/
+    float: left;
+    margin:  2.5295% 2.5295% 2.5295% 0; 
+    width: 53%;
 }
-.borda-resultado-financas-mensais-txt{
-    position: static;
-    width: 120vh;
-    height: 36vh;
-    text-indent: 1em;
-    text-align: justify;
-    font-family:'Times New Roman', Times, serif;
+.last-content-call .secondary-title{
+    margin-bottom: 0;
 }
-.borda-detalhe-financas-mensais-txt{
-    position: static;
-    width: 130vh;
-    height: 28vh;
-    text-indent: 1em;
-    text-align: justify;
-    font-family:'Times New Roman', Times, serif;
+.last-content-call .brief{
+    margin: 1.7857% 0;
 }
-.borda-tabela-financas-viagem-txt{
-    position: static;
-    width: 100vh;
-    height: 33vh;
-    text-indent: 1em;
-    text-align: justify;
-    font-family:'Times New Roman', Times, serif;
-}
-.borda-resultado-financas-viagem-txt{
-    position: static;
-    width: 140vh;
-    height: 20vh;
-    text-indent: 1em;
-    text-align: justify;
-    font-family:'Times New Roman', Times, serif;
-}
-.borda-retalhe-financas-viagem-txt{
-    position: static;
-    width: 140vh;
-    height: 18vh;
-    text-indent: 1em;
-    text-align: justify;
-    font-family:'Times New Roman', Times, serif;
-}
-.borda-tabela-financas-futuro-txt{
-    position: static;
-    width: 120vh;
-    height: 23vh;
-    text-indent: 1em;
-    text-align: justify;
-    font-family:'Times New Roman', Times, serif;
-}
-.borda-resultado-financas-futuro-txt{
-    position: static;
-    width: 130vh;
-    height: 15vh;
-    text-indent: 1em;
-    text-align: justify;
-    font-family:'Times New Roman', Times, serif;
-}
-/*Pagina Sub Grafico*//*documentar*/
-.subprojeto-txt-grafico{
-    text-align: justify;
-    text-indent: 1em;
-    line-height: 1.2;
-    font-family: 'Times New Roman', Times, serif;
-    margin-left: 10%;
-    margin-right: 10%;
-    margin-top: -23%;
-    height: 18%;
-}
-/*Pagina Sub Serviços*//*documentar*/
-.subprojeto-borda-servico{
-    margin-left: 3%;
-    margin-right: 3%;
+.hero img{
+    max-width: 100%;
 }

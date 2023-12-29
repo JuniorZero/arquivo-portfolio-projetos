@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <link rel="stylesheet" href="../stilo.css">
+        <link rel="shortcut icon" href="../imagens/Portfólio-Man.png" type="image/x-icon">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Projetos</title>
+    </head>
+    <body>
+        <!--TL14.1 Designer da barra horizontal superior-->
+        <header class="barra-horizontal">
+            <ul class="lista-navegacao">
+                <li><a href="#">Histórico Escolar (Em Manutenção)</a></li>
+                <li><a href="#">Tabela de Serviços (Em Manutenção)</a></li>
+                <li><a href="#">Gráficos (Em Manutenção)</a></li>
+            </ul>
+        </header>
+        <!--TL14.3 Titulo da página-->
+        <h3>Tabela de Financias Pessoais</h3>
+        <!--TL14 Tela principal-->
+        <div class="borda-externa-excel">
+            <div class="borda-tabela-financas-mensais">
+                <img src="img.projexcel/tab-finanças-mensais.PNG" alt="Tabela Finanças Mensais">
+            </div>
+            <div class="borda-tabela-financas-mensais-txt">
+                <p>O projeto sobre organização financeira, tem como demostração a utiliação do Excel e o uso de algumas formulas e função.<br>É feito uma estrutura com dados, que pode ser usado por um casal ou uma pessoa solteira, pois são dados que são geradas pelas atividades do dia-dia, assim, a pessoa pode controlar seus gastos e fazer algum plano financeiro para o futuro.<br> Sobre a tabela, a primeira coluna é chamada de "limites", tal coluna é composta por células editáveis, o próprio usuário define o quanto ele está disposto a gastar em cada item, colocando os valores no formato de dinheiro. Na coluna seguinte, é a quantidade, o usuário colocará informações no formato de números, a quantidade itens pago em um determinado período de tempo. A coluna central, é do Status, tem como objetivo de alertar através de cores verde e vermelho, se o limite foi ultrapassado ou ficou a baixo, cor verde significa que a compra ficou abaixo do limite e a cor vermelha atingiu ou ficou acima do limite. Por fim, tal coluna não será necessário modificação do usuário, pois essa coluna está vinculado a coluna limite pela função SE,por exemplo: =SE(B9>=F9;"Barato";"Caro"), B9 é a posição da célula na coluna limite e F9 é a posição da célula na coluna Gasto. A penúltima coluna, contém os nomes das despesas das pessoas, incluindo lugares, faturas, objetos, despesas da casa e despesas do carro. E por fim, na última coluna, gasto, nessa coluna o usuário poderá colocar, em valor numérico, a quantidade de dinheiro que foi gasto com cada item.</p>
+            </div>
+            
+            <div class="borda-resultado-financas-mensais">
+                <img src="img.projexcel/resul-finanças-mensais.PNG" alt="Resultado Finanças Mensais">
+            </div>
+            <div class="borda-resultado-financas-mensais-txt">
+                <p>Na Segunda tabela, contém os resultados finais da primeira tabela, calculando o total das despesas do usuário com o salário recebido pelo usuário.<br> Primeiramente, a linha que o usuário vai ter a liberdade de editar será a primeira linha, salário, através dessa linha, vai ser calculado a despesas - salário, na última linha da tabela, =D7-D8, o resultado final dessa fórmula for maior que 0, a resposta vai ser da cor verde, indicando que ocorreu uma economia, mas caso o resultado for menor que 0, a resposta vai ser da cor vermelha, indicando que gastou tudo e ficou em dívidas. Essa mudança de cor, é causada pela regra de formatação condicional, criada para chamar a atenção do usuário, que o resultado pode ou não está dentro do esperado. E na linha central, é a soma de todos os gastos feito na tabela anterior, tal resultado é mostrado automaticamente pela fórmula, =SOMA(Tabelas!F9:F35).  Essa função busca, informações em outra página que está localizado a tabela Finanças Mensais e mostrando o total de gasto realizado pelo usuário.</p>
+            </div>
+            
+            <div class="borda-detalhe-financas-mensais">
+                <img src="img.projexcel/detalhe-finanças-mensais.PNG" alt="Detalhes Finanças Mensais">
+            </div>
+            <div class="borda-detalhe-financas-mensais-txt">
+                <p>Terceira e última tabela sobre as finanças mensais, tem como objetivo mostrar detalhes que podem ou não agregar valor para o usuário.<br> É uma tabela totalmente automatizada, sem a necessidade da intervenção do usuário, nela pode ser visto o valor mais alto gasto e o menor valor gasto, e a quantidade de itens que está na coluna nome da tabela Finanças Mensais. =MAIOR(Tabelas!F9:F35;1), =MÍNIMO(Tabelas!E9:F35), =CONT.VALORES(Tabelas!E9:E35), como pode ser visto, para procurar o maior valor gasto, a função faz a busca na página tabelas para entre o intervalo do primeiro valor da tabela Finanças mensais, até a última linha, mostrando o primeiro maior valor que for encontrado, o mesmo vale para a busca do menor valor. O CONT.VALORES vai contar a quantidade de itens que tem na tabela Finanças mensais.</p>
+            </div>
+            <div class="borda-tabela-financas-viagem">
+                <img src="img.projexcel/tab-finanças-viagem.PNG" alt="Tabela Finanças Viagem" >
+            </div>
+            <div class="borda-tabela-financas-viagem-txt">
+                <p>Aqui a tambêm uma tabela que pode ser usado por um casal ou uma pessoa solteira. Tal tabela tem a funcionalidade de mostrar uma organização financeira de um plano para viagem.<br> A tabela é composta pela primeira coluna, Objetivo, nela vai ter valores que o usuário terá a liberdade de colocar para que não sejam alcançados. A coluna seguinte, Metas, tem a função de notificar se o objetivo foi alcançado ou não, pelas cor vermelha, indica que a meta não foi atingida, o usuário gastou mais do que o planejado, já a cor verde, a meta foi alcançada, obteve uma economia do usuário.  A coluna central, Quantidade, é livre para edição, colocando a quantidade de itens comprados e a próxima coluna, Nome, indica o nome dos itens que foram comprados. E por fim, na coluna Gasto, o usuário irá colocar o valor gasto para cada linha.</p>
+            </div>
+            
+            <div class="borda-resultado-financas-viagem">
+                <img src="img.projexcel/resul-finanças-viagem.PNG" alt="Resultado Finanças Viagem">
+            </div>
+            <div class="borda-resultado-financas-viagem-txt">
+                <p> A tabela tem como foco a preparação e controle financeiro, antes de uma viagem, a tabela atual mostra o resultado final da preparação. A tabela Resultado(Viagem), está interligada com a tabela finanças viagens pela função =SOMA(Tabelas!), na segunda linha, já na primeira linha, o usuário irá colocar a quantidade de dinheiro guardado para a viagem. E a última linha, Total, é a soma do gasto - economizado, =G7-G8.</p>
+            </div>
+            
+            <div class="borda-detalhe-financas-viagem">
+                <img src="img.projexcel/detalhes-finanças-viagem.PNG" alt="Detalhes Finanças Viagem">
+            </div>
+            <div class="borda-retalhe-financas-viagem-txt">
+                <p>A tabela Finanças Viagens, também contém uma tabela de detalhes, com informações adicionais para um melhor entendimento, igualmente a tabela finanças Mensais. Tal tabela é automatizada e interligada com a tabela Finanças Viagens, com informações de maior valor gasto, menor valor gasto e a quantidade de categorias.</p>
+            </div>
+            
+
+            <div class="subprojeto-borda1">
+                <img src="img.projexcel/tab-finanças-futuro.PNG" alt="Tabela Finanças Futuro">
+            </div>
+            <div class="borda-tabela-financas-futuro-txt">
+                <p>Já na ultima tabela, pode ser visto informações sobre o histórico de dinheiro economizado e as metas para ser serem atingidos, a cada ano.<br> A tabela Finanças Futuro, é composto por 4 colunas, Ano, mostra o começo do objetivo até o ano atual, Objetivo, tem valores definidas pelo usuário para ser atingido, Acumulado, valores economizado conforme o fechamento do ano, colocado pelo usuário e Metas, automatizado, com o objetivo de alertar se a meta foi ou não atingido, usando a função =SE(O9>=P9;"Não Realizada";"Realizada")</p>
+            </div>
+
+            <div class="borda-resultado-financas-futuro">
+                <img src="img.projexcel/resul-finanças-futuro.PNG" alt="Resultado Finanças Futuro">
+            </div>
+            <div class="borda-resultado-financas-futuro-txt">
+                <p>A tabela Resultado Futuro, está conectado a tabela Finanças Futuro para mostrar a quantidade de dinheiro economizado, =SOMA(Tabelas!P9:P12), e em quanto tempo, =CONT.NÚM(Tabelas!N9:N12).</p>
+            </div>
+            
+            <!-- (Para colocar mais conteúdo)
+            <div class="">
+                <img src="" alt="">
+                <div class="">
+                    <p></p>
+                </div>
+            </div>
+            -->
+        </div>
+    </body>
+</html>
