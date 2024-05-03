@@ -15,6 +15,25 @@ html{
     height: 4em;
     width: 100%;
 }
+.barra-horizontal ul{
+    display: flex;
+    height: 3em;
+    width: 90%;
+    text-indent: -45%;
+    text-align: center;
+}
+.barra-horizontal li{
+    background-color: rgb(255, 255, 255);
+    border-radius: 15%;
+    width: 15%;
+    margin-left: 0.5%;
+    margin-right: 2%;
+}
+.barra-horizontal a{
+    font-size:calc(0.5em + 0.5vw);
+    margin-left: 45%;
+    
+}
 .barra-horizontal h2{
     font-size:calc(1.2em + 1.2vw);
     
@@ -28,84 +47,13 @@ li{
     margin-top: 1em;
     font-size:larger;
 }
-/*Design do menu*/
-/*Parte Externa*/
-.content-sidebar{/*Estrutura externa do Menu*/
-    display: flex;
-    float: right;
-    background-image: linear-gradient(rgba(71, 71, 71, 0.828)80%,rgb(255, 255, 255));
-    padding: 2%;
-    margin-top: 2%; 
-    width: 20%;
-    margin-right: 4%;
-}
-.content-nav ul{/*Menu*/
-    list-style-type: none;
-}
-.content-nav li{/*Formato dos botoes do Menu*/
-    background-color: rgb(255, 255, 255);
-    float: left;
-    margin: 6px;
-    outline: 2px solid #060606;
-    font-size:0.8dvi;
-    width: 80%;
-    text-align: center;
-    margin-left: 10%;
-}
-.content-nav a{ /*botao menu*/
-    display: block;
-    padding:  15%;
-    text-decoration: none;
-    
-    /*background-color: #ff01d0;*/
-}
-.menu-lateral{
-    height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: rgba(251, 248, 248, 0.828);
-    overflow-x: hidden;
-    transition: 0.35s;
-    padding-top: 10%;
-}
-.content-nav h3{
-    text-align: center;
-}
-/*Conteúdo do menu*/
-.menu-lateral a{
-    padding: 10px 10px 10px 30px;
-    text-decoration: none;
-    display: block;
-    color: rgb(0, 0, 0);
-    transition: 0.3s;
-}
-.menu-lateral a:hover{
-    box-shadow: 6px 6px 15px rgb(246, 108, 108);
-    color:rgb(246, 108, 108);
-}
-/*Largura da abertura do menu lateral*/
-@media screen and(max-height: 450px){
-    .menu-lateral{padding-top: 15px;}
-    .menu-lateral a{font-size: 18px;}
-}
-/*Botão fechar do menu*/
-.btn-fechar{
-    position: absolute;
-    top: 10px;
-    right: 20px;
-    margin-left: 50px;
-    width: 30px;
-}
 /*Página index*/
 /*Estrutura externa, altera o posicionamento*/
 .fundo{
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    background-image: linear-gradient(-45deg,rgb(253, 253, 253)40%,rgb(246, 108, 108));
+    background-image: linear-gradient(-45deg,rgb(253, 253, 253)40%,rgb(71, 71, 71, 0.828));
     padding-bottom: 12.2%;
     font-size: 1em;
 }
@@ -142,7 +90,7 @@ li{
 }
 /*Posicionamento e dimensão do gif e mensagem*/
 .meio-esquerdo{
-    background-image: url(videos/tech-eye.gif);
+    background-image: url(imagens/img-main/verde-claro-eu.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -221,31 +169,34 @@ li{
     justify-content:space-between;
     width: 67.5%; /*67.5%*/
     margin-left: 2%;
+    height: 0;
 }
-/*Posição da interno*/
+/*Posição do interno*/
 .borda{
     /*margin-right: 19%;*/
-    width: 350px;
-    height: 395px;
-    
+    width: 400px;
+    height: 450px;
+}
+.borda img{
+    max-width: 50%;
 }
 /*Posição da informação*/
 .txt-descricao{
     text-align: justify;
     text-indent: 1em;
-    margin-top: -9em;
+    margin-top: -7em;
     margin-left: 6em;
     font-family:'Times New Roman', Times, serif;
 }
 .txt-livro{
-    text-align: justify;
+    
     text-indent: 1em;
-    margin-left: 10em;
-    margin-top: -13.5em;
+    margin-left: 9.4em;
+    margin-top: -10em;
     font-family:'Times New Roman', Times, serif;
 }
 
-/*Paginas Sub Projeto finanças*/
+/*Paginas Sub*/
 h1{
     font-size: 2em; /* 32 / 16 */
 }
@@ -253,6 +204,7 @@ h1{
     max-width: 100%;
     float: inline-start;
     width: 300px;
+    
 }
 .container-global{/*estrutura externa*/
     margin: 0 auto;
@@ -270,10 +222,10 @@ h1{
     /* = 0.8431%, que, opcionalmente, pode ser arredondado para 1% */
 }
 .hero{ /*largura entre as frases*/
-    display: flex;
     margin: 20px 0;
 }
 .last-contents-bloco{ /*largura entre as frases e imagens*/
+    
     margin: 13% 3% 2%;
 }
 .last-contents{ /*tamanho da ultima frase*/
@@ -283,6 +235,7 @@ h1{
     float: left;
     margin:  2.5295% 2.5295% 2.5295% 0; 
     width: 53%;
+    padding: 2%;
 }
 .last-content-call .secondary-title{
     margin-bottom: 0;
