@@ -182,14 +182,14 @@ li{
 }
 /*Posição da informação*/
 .txt-descricao{
-    text-align: justify;
+    transform: scale(0.8);
     text-indent: 1em;
     margin-top: -7em;
     margin-left: 6em;
     font-family:'Times New Roman', Times, serif;
 }
 .txt-livro{
-    
+    transform: scale(0.8);
     text-indent: 1em;
     margin-left: 9.4em;
     margin-top: -10em;
@@ -211,10 +211,23 @@ h1{
     width: 67.5%; /* +/- 960 */
 }
 .content{/*tamanho estrutura*/
+    background-color: rgb(234, 255, 0);
     margin: 1.5625% 0; /* 15 / 960 */
 }
 .brief{ /*largura entre titulo e frase*/
-    margin: 5px 0;
+    transform: scale(0.8);
+    text-indent: 1em;
+    font-family:'Times New Roman', Times, serif;
+    margin: 5px 65%;
+    margin-right: -10%;
+    
+}
+.brief-txt{ /*largura entre titulo e frase*/
+    transform: scale(0.8);
+    text-indent: 1em;
+    font-family:'Times New Roman', Times, serif;
+    margin: 5px 0%;
+    
 }
 .content-conteudo{
     float: left;
@@ -225,11 +238,10 @@ h1{
     margin: 20px 0;
 }
 .last-contents-bloco{ /*largura entre as frases e imagens*/
-    
-    margin: 13% 3% 2%;
-}
-.last-contents{ /*tamanho da ultima frase*/
-    font-size: .75em;
+    /*margin: 12% -3% 2% 0%;*/
+    margin-top: 10%;
+    margin-right: -10%;
+    padding: 6%;
 }
 .last-contents-call{ /*espaço entre frases e menu*/
     float: left;
