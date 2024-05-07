@@ -184,7 +184,7 @@ li{
 .txt-descricao{
     transform: scale(0.8);
     text-indent: 1em;
-    margin-top: -7em;
+    margin-top: -7.5em;
     margin-left: 6em;
     font-family:'Times New Roman', Times, serif;
 }
@@ -192,7 +192,7 @@ li{
     transform: scale(0.8);
     text-indent: 1em;
     margin-left: 9.4em;
-    margin-top: -10em;
+    margin-top: -12em;
     font-family:'Times New Roman', Times, serif;
 }
 
@@ -211,15 +211,16 @@ h1{
     width: 67.5%; /* +/- 960 */
 }
 .content{/*tamanho estrutura*/
-    background-color: rgb(234, 255, 0);
-    margin: 1.5625% 0; /* 15 / 960 */
+    display: flex;
+    margin: 1.5625% -3.2323%; /* 15 / 960 */
 }
 .brief{ /*largura entre titulo e frase*/
     transform: scale(0.8);
     text-indent: 1em;
     font-family:'Times New Roman', Times, serif;
-    margin: 5px 65%;
-    margin-right: -10%;
+    margin: 4px 0%;
+    margin-right: -20%;
+    margin-top: -2%;    
     
 }
 .brief-txt{ /*largura entre titulo e frase*/
@@ -243,11 +244,11 @@ h1{
     margin-right: -10%;
     padding: 6%;
 }
-.last-contents-call{ /*espaço entre frases e menu*/
+.last-contents-call{ /*espaço entre frases*/
     float: left;
     margin:  2.5295% 2.5295% 2.5295% 0; 
     width: 53%;
-    padding: 2%;
+    
 }
 .last-content-call .secondary-title{
     margin-bottom: 0;
